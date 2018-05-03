@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace codxFrank.Demo.ServerSendEvent
+namespace WebApi
 {
     public static class WebApiConfig
     {
@@ -16,7 +16,7 @@ namespace codxFrank.Demo.ServerSendEvent
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
